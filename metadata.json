@@ -1,0 +1,8 @@
+{
+  "name": "Milingua - Traduttore Simultaneo In-Ear",
+  "description": "Milingua: traduttore simultaneo in tempo reale per iPhone: ascolto in cuffia a bassa latenza, teleprompter live senza interruzioni per lunghe conversazioni e modalità offline da viaggio per IT, EN, ES, FR, DE, PT.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
