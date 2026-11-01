@@ -60,12 +60,12 @@ export const DualSplitView: React.FC<DualSplitViewProps> = ({
   const latestItem = items.length > 0 ? items[items.length - 1] : null;
 
   return (
-    <div className="flex-1 w-full max-w-xl mx-auto flex flex-col justify-between p-2 min-h-0 select-none gap-2">
+    <div className="w-full max-w-xl mx-auto flex flex-col gap-3.5 p-3 select-none pb-12">
       {/* =========================================================================
           TOP HALF: INTERLOCUTORE (Faced toward the person sitting across from you)
           ========================================================================= */}
       <div
-        className={`flex-1 flex flex-col justify-between rounded-2xl p-3 sm:p-4 transition-all duration-300 relative border overflow-hidden ${
+        className={`w-full min-h-[220px] flex flex-col justify-between rounded-3xl p-4 transition-all duration-300 relative border shadow-md ${
           isTopFlipped ? 'rotate-180' : ''
         } ${
           activeSpeaker === 'interlocutor' && isListening
@@ -237,7 +237,7 @@ export const DualSplitView: React.FC<DualSplitViewProps> = ({
           BOTTOM HALF: TU (Italiano) - PROMINENT GREEN MICROPHONE
           ========================================================================= */}
       <div
-        className={`flex-1 flex flex-col justify-between rounded-2xl p-3 sm:p-4 transition-all duration-300 relative border overflow-hidden ${
+        className={`w-full min-h-[220px] flex flex-col justify-between rounded-3xl p-4 transition-all duration-300 relative border shadow-md ${
           activeSpeaker === 'user' && isListening
             ? 'bg-gradient-to-b from-emerald-950 to-slate-900 border-emerald-400 ring-2 ring-emerald-400/50 shadow-lg shadow-emerald-950/60'
             : 'bg-gradient-to-b from-indigo-950/30 to-slate-900/95 border-emerald-500/40'

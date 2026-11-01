@@ -358,7 +358,7 @@ export default function App() {
     SUPPORTED_LANGUAGES.find((l) => l.code === targetLang)?.name || targetLang;
 
   return (
-    <div className="flex flex-col h-[100dvh] max-h-[100dvh] w-full bg-[#090d16] text-slate-100 overflow-hidden font-sans pb-[calc(env(safe-area-inset-bottom,0px)+6px)] pl-[env(safe-area-inset-left,0px)] pr-[env(safe-area-inset-right,0px)]">
+    <div className="flex flex-col min-h-[100dvh] w-full bg-[#090d16] text-slate-100 font-sans pb-[calc(env(safe-area-inset-bottom,0px)+12px)] pl-[env(safe-area-inset-left,0px)] pr-[env(safe-area-inset-right,0px)] overflow-x-hidden">
       {/* Top Header */}
       <Header
         isListening={isListening}
@@ -413,7 +413,7 @@ export default function App() {
       )}
 
       {/* Main View Area */}
-      <main className="flex-1 flex flex-col min-h-0 relative overflow-hidden">
+      <main className="flex-1 flex flex-col w-full relative">
         {viewMode === 'teleprompter' && (
           <TeleprompterView
             items={items}
