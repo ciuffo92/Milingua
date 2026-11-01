@@ -358,7 +358,7 @@ export default function App() {
     SUPPORTED_LANGUAGES.find((l) => l.code === targetLang)?.name || targetLang;
 
   return (
-    <div className="flex flex-col h-[100dvh] max-h-[100dvh] w-full bg-[#090d16] text-slate-100 overflow-hidden font-sans pb-[env(safe-area-inset-bottom,8px)]">
+    <div className="flex flex-col h-[100dvh] max-h-[100dvh] w-full bg-[#090d16] text-slate-100 overflow-hidden font-sans pb-[calc(env(safe-area-inset-bottom,0px)+6px)] pl-[env(safe-area-inset-left,0px)] pr-[env(safe-area-inset-right,0px)]">
       {/* Top Header */}
       <Header
         isListening={isListening}

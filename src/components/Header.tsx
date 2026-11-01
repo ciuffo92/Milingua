@@ -47,7 +47,7 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-[#090d16]/90 backdrop-blur-xl border-b border-slate-800/80 px-3.5 py-2.5 transition-all">
+    <header className="shrink-0 w-full bg-[#090d16]/95 backdrop-blur-xl border-b border-slate-800/80 px-3.5 pb-2.5 pt-[calc(env(safe-area-inset-top,0px)+10px)] transition-all select-none">
       <div className="flex items-center justify-between gap-2 max-w-xl mx-auto">
         {/* App Title & Live Pulse */}
         <div className="flex items-center gap-2">
