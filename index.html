@@ -2,10 +2,17 @@
 <html lang="it" class="dark">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Ensure trailing slash on GitHub Pages repository URLs so relative ./assets/ always load
+      if (location.hostname.endsWith('github.io') && location.pathname.length > 1 && !location.pathname.endsWith('/') && !location.pathname.includes('.')) {
+        location.replace(location.pathname + '/' + location.search + location.hash);
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Milingua" />
+    <meta name="application-name" content="Milingua" />
     <meta name="theme-color" content="#090d16" />
     <title>Milingua - Traduttore Simultaneo In-Ear</title>
     <meta name="description" content="Milingua: traduttore simultaneo in tempo reale per iPhone: ascolto in cuffia a bassa latenza, teleprompter live senza interruzioni per lunghe conversazioni e modalità offline da viaggio per IT, EN, ES, FR, DE, PT." />
@@ -13,6 +20,14 @@
     <meta property="og:description" content="Milingua: traduttore simultaneo in tempo reale per iPhone: ascolto in cuffia a bassa latenza, teleprompter live senza interruzioni per lunghe conversazioni e modalità offline da viaggio per IT, EN, ES, FR, DE, PT." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- iPhone / iOS Native App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
