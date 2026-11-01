@@ -8,32 +8,25 @@
     --sar: env(safe-area-inset-right, 0px);
   }
 
-  html {
-    min-height: 100%;
+  html, body {
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     background-color: #090d16;
+    overscroll-behavior: none;
     -webkit-text-size-adjust: 100%;
-    overflow-x: hidden;
   }
 
   body {
-    min-height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #090d16;
-    color: #f1f5f9;
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     -webkit-tap-highlight-color: transparent;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
   }
 }
 
-/* iOS momentum smooth touch scrolling */
+/* iOS momentum smooth scrolling */
 * {
   -webkit-overflow-scrolling: touch;
 }
